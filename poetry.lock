@@ -1779,20 +1779,23 @@ files = [
 ]
 
 [[package]]
-name = "duo-client"
+name = "duo_client"
 version = "5.3.0"
 description = "Reference client for Duo Security APIs"
 optional = false
 python-versions = "*"
 groups = ["main"]
-files = [
-    {file = "duo_client-5.3.0-py3-none-any.whl", hash = "sha256:85614bb684cef96285268aef0c1e858df939f6e8a190fb2c707d700bb0215766"},
-    {file = "duo_client-5.3.0.tar.gz", hash = "sha256:afa5ef98a42f06965a2702ca41dba9c85c483abd945e0a440f0ec4871b7593bf"},
-]
+files = []
+develop = false
 
 [package.dependencies]
 setuptools = "*"
-six = "*"
+
+[package.source]
+type = "git"
+url = "http://github.com/duosecurity/duo_client_python.git"
+reference = "master"
+resolved_reference = "5ed620100b3eccf485794d6ea068fc3caa525ff9"
 
 [[package]]
 name = "durationpy"
@@ -6190,4 +6193,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "~3.12"
-content-hash = "1ccdfab2d3377733ff9f28394f7a6287c96c5256f3b79ff4f7a6efa52369985a"
+content-hash = "2371619fea5d365063926499f25f7c6361f281f09b4db2b93c5a9d305514aa86"
